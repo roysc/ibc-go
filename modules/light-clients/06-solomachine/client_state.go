@@ -441,7 +441,7 @@ func (cs *ClientState) VerifyMembership(
 	path []byte,
 	value []byte,
 ) error {
-	// TODO: Implement 06-solomachine VerifyMembership
+	// TODO: Attempt to break up code into smaller functions
 	if revision := height.GetRevisionNumber(); revision != 0 {
 		return sdkerrors.Wrapf(sdkerrors.ErrInvalidHeight, "revision must be 0 for solomachine, got revision-number: %d", revision)
 	}
